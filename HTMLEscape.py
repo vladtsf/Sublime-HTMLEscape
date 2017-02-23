@@ -21,12 +21,14 @@ class HTMLEntityCommand(sublime_plugin.TextCommand):
       self.view.replace(edit, selection, self.process(selected_text))
 
 class EscapehtmlCommand(HTMLEntityCommand):
+  """Escapes HTML entities."""
   def process(self, text):
     escaped = html.escape(text)
     escaped = escaped.replace("&#x27;", "&apos;") # fix for '
     return escaped
 
 class UnescapehtmlCommand(HTMLEntityCommand):
+  """Unescapes HTML entities."""
   def process(self, text):
     return HTMLParser().unescape(text)
 
