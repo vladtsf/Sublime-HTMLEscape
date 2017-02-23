@@ -1,0 +1,4 @@
+[
+  {"caption": "HTML: Escape", "command": "escapehtml"},
+  {"caption": "HTML: Unescape", "command": "unescapehtml"}
+]
