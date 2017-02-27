@@ -1,4 +1,4 @@
-Sublime Text 3 Print to HTML
+Sublime Text 3 HTMLEscape
 ============================
 
 A Sublime Text 2/3 plugin to escape HTML entities in selected code.
